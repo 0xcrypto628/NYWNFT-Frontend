@@ -25,6 +25,14 @@ import ToggleProfile from "@/lib/components/profile/ToggleProfile";
 import PrimaryButton from "@/lib/components/button/PrimaryButton";
 import { useAccount } from "wagmi";
 
+const menuItems = [
+  "Explorer NFT",
+  "Create NFT",
+  "Earn",
+  "Campaign",
+  "Whitepaper",
+];
+
 export default function Header() {
   const router = useRouter();
   const { data: session, status } = useSession();

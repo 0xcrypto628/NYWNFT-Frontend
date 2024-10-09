@@ -46,7 +46,7 @@ export default function CompanySection() {
   <div className="container">
   <h2>Our Core Companies</h2>
   <p>The largest and unique Super rare NFT marketplace For crypto-collectibles</p>
-  <section className="mx-auto w-full px-6 py-20 sm:py-32 lg:px-8 lg:py-40">
+  <section className="mx-auto w-full px-6 py-20 lg:px-8">
     <CompanyBanner shouldPauseOnHover gap="40px">
       {/* <div className="flex flex-wrap justify-center gap-4"> */}
         {logos.map(({ name, img }) => (

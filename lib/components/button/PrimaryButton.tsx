@@ -22,7 +22,7 @@ const PrimaryButton: React.FC<ButtonProps> = ({
       variant="light"
       size="sm"
       className={twMerge(
-        "w-[180px] h-[40px] px-3 group relative p-4 overflow-hidden rounded text-white transition-all duration-300 ease-out bg-[#181B36]",
+        "w-[180px] h-[40px] px-3 group relative p-4 overflow-hidden rounded text-white transition-all duration-300 ease-out",
         className,
         varient === "primary" ? "btn" : "btn-reverse"
       )}

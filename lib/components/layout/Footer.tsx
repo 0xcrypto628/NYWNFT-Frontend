@@ -12,7 +12,7 @@ export default function Footer() {
 
   const logoElement = useMemo(() => {
     return (
-      <img src="/logo1.png" role="button" tabIndex={0} className="hover:cursor-pointer" onClick={onLogo} alt="Not Found" />
+      <img src="/logo.png" role="button" tabIndex={0} className="hover:cursor-pointer w-16 h-16" onClick={onLogo} alt="Not Found" />
     );
   }, []);
 
@@ -25,9 +25,9 @@ export default function Footer() {
               <div className="">
                 {logoElement}
                 <div className="font-small max-w-[400px] mt-3">
-                  Ever dreamt of being part of the New York World? 
-                  NYW, the bridge between Blockchain and AI, 
-                  lets you own a piece of the action. Generate and mint NFTs, 
+                  Ever dreamt of being part of the New York World?
+                  NYW, the bridge between Blockchain and AI,
+                  lets you own a piece of the action. Generate and mint NFTs,
                   unlocking the future of creativity in the heart of the world.
                 </div>
                 <div className="flex gap-3 mt-3">
@@ -35,9 +35,11 @@ export default function Footer() {
                   <span><img src="/socials/instagram.svg" alt="Not Found" /></span>
                   <span><img src="/socials/twitter.svg" alt="Not Found" /></span>
                   <span><img src="/socials/linkedin.svg" alt="Not Found" /></span>
-                  <span><img src="/socials/telegram.svg" alt="Not Found" /></span>
+                  <a href="https://t.me/+YUAQVX-sDoM1NTdh">
+                    <img src="/socials/telegram.svg" alt="Not Found" />
+                  </a>
                   <span><img src="/socials/discord.svg" alt="Not Found" /></span>
-                  <span><img src="/socials/youtube.svg" alt="Not Found" /></span> 
+                  <span><img src="/socials/youtube.svg" alt="Not Found" /></span>
                 </div>
               </div>
               <div className="font-small flex justify-between lg:gap-10">
@@ -57,7 +59,7 @@ export default function Footer() {
                 </ul>
                 <ul className="flex flex-col gap-2 lg:gap-4">
                   <li className="font-medium">Resources</li>
-                  <li><Link href="/explore" />NYW Documentation</li>
+                  <li><a href="https://sakais-organization.gitbook.io/nywnft-whitepaper">NYW Documentation</a></li>
                   <li><Link href="/explore" />Logo</li>
                   <li><Link href="/explore" />Terms of Service</li>
                   <li><Link href="/explore" />Privacy Policy</li>
@@ -68,7 +70,7 @@ export default function Footer() {
                 <p className="font-small">Join our mailing list to stay in the loop with our newest feature releases, NFT drops, and tips and tricks for navigating NFTs.</p>
                 <div className="relative flex rounded-md">
                   <div className="rounded-l-md p-2 bg-white/10">
-                    <input type="email" className="font-small border-none outline-none bg-transparent" placeholder="Enter your email address" /> 
+                    <input type="email" className="font-small border-none outline-none bg-transparent" placeholder="Enter your email address" />
                   </div>
                   <div className="inset-0 bg-light-blue rounded-r-md flex items-center px-2"><span>SUBSCRIBE</span></div>
                 </div>

@@ -2,7 +2,7 @@ import ImageCarousel from "@/lib/components/carousel/ImageCarousel";
 
 export default function CampaignSection() {
   return (
-    <section className="mt-16">
+    <section>
       <div className="container">
         <div className="text-center">
           <h2>Top Collection</h2>
