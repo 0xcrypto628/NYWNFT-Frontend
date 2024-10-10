@@ -1,5 +1,6 @@
-import Box from "@mui/material/Box";
+import Box from "@mui/material/Box";    
 import ImageList from "@mui/material/ImageList";
+import { Image } from "@nextui-org/react";
 
 export default function HighlightSection() {
   return (
@@ -16,7 +17,7 @@ export default function HighlightSection() {
               {
                 [1, 2, 3, 4, 5, 6, 7, 8].map((item) => {
                   return (
-                    <img className="p-1" key={item} src={`/asset/high-${item}.png`} alt="Not Found" />
+                    <Image isZoomed className="p-1" key={item} src={`/asset/high-${item}.png`} alt="Not Found" />
                   )
                 })
               }

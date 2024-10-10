@@ -37,7 +37,7 @@ export default function HeroSection() {
             <div>
               <h2 className="">
                 Diversity & Technology in{" "}
-                <p className="gradient">New York World</p>
+                <p className="gradient text-6xl">New York World NFTs</p>
               </h2>
               <p className="mt-4 mb-8">
                 Ever dreamt of being part of the New York World? NYW, the bridge
