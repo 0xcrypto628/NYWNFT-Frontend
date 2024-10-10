@@ -117,6 +117,11 @@ export default function Header() {
               Campaigns
             </Link>
           </NavbarItem>
+          <NavbarItem isActive={path.includes("whitepaper") ? true : false}>
+            <Link className="flex gap-2 text-inherit" href="https://sakais-organization.gitbook.io/nywnft-whitepaper">
+              Whitepaper
+            </Link>
+          </NavbarItem>
         </NavbarContent>
         {session && address ? (
           <NavbarContent
