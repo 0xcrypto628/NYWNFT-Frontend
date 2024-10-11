@@ -83,8 +83,6 @@ export default function TabImage({
                     setSelectedImageIndex(index);
                     handleCardClick(style.model_id);
                   }}
-                  height={200}
-                  width={200}
                   src={`/asset/style${index + 1}.png`}
                 />
                 <CardFooter className="p-0 justify-center absolute bottom-1 z-10">

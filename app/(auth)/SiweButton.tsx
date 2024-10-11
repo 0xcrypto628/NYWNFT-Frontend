@@ -31,8 +31,6 @@ const SiweButton = () => {
       modalOpened.current = false;
 
       try {
-        const { nonce } = await authChallenge(address);
-        console.log(nonce);
         const siwe = new SiweMessage({
           domain: window.location.host,
           address: address,
@@ -40,7 +38,7 @@ const SiweButton = () => {
           uri: window.location.origin,
           version: "1",
           chainId: chains[0].id,
-          nonce: nonce,
+          nonce: await getCsrfToken(),
         });
 
         const message = siwe.prepareMessage();

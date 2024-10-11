@@ -212,16 +212,19 @@ const CreateNFT = () => {
                   }
                 />
               </Tabs>
+              {activeTab == WorkingTabs.Image && (
                 <TabImage
-                  modelSetter={setModel_id}
-                  inputText={inputText}
-                  setInputText={setInputText}
-                  imageSize={imageSize}
-                  setImageSize={setImageSize}
-                />
-               ||
-                (activeTab == WorkingTabs.Video && <TabVideo />) ||
-                (activeTab == WorkingTabs.Music && <TabMusic />)
+                modelSetter={setModel_id}
+                inputText={inputText}
+                setInputText={setInputText}
+                imageSize={imageSize}
+                setImageSize={setImageSize}
+              />
+              )}
+                
+                {(activeTab == WorkingTabs.Music && <TabMusic />)
+                }
+                {(activeTab == WorkingTabs.Video && <TabVideo />)}
               <div className="flex flex-col gap-3 py-6">
                 <div className="flex justify-center">
                   <PrimaryButton

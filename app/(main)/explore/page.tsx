@@ -51,7 +51,7 @@ const Explorer = () => {
   return (
     <div>
       <div className="relative">
-        <img
+        <Image
           className="w-full max-h-[600px]"
           src="/metaverse.png"
           alt="Not Found"

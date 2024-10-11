@@ -12,11 +12,6 @@ declare module "next-auth" {
     providerAccountId: string;
     username?: string;
   }
-
-  interface User {
-    id: string;
-    jwt: string;
-  }
 }
 
 declare module "next-auth/jwt" {

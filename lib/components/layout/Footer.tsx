@@ -31,36 +31,36 @@ export default function Footer() {
                   unlocking the future of creativity in the heart of the world.
                 </div>
                 <div className="flex gap-3 mt-3">
-                  <span><img src="/socials/facebook.svg" alt="Not Found" /></span>
-                  <span><img src="/socials/instagram.svg" alt="Not Found" /></span>
-                  <span><img src="/socials/twitter.svg" alt="Not Found" /></span>
-                  <span><img src="/socials/linkedin.svg" alt="Not Found" /></span>
+                  <a href="https://x.com/nynycoins">
+                    <img src="/socials/twitter.svg" alt="Not Found" />
+                    </a>
                   <a href="https://t.me/+YUAQVX-sDoM1NTdh">
                     <img src="/socials/telegram.svg" alt="Not Found" />
                   </a>
-                  <span><img src="/socials/discord.svg" alt="Not Found" /></span>
-                  <span><img src="/socials/youtube.svg" alt="Not Found" /></span>
+                  <a href="https://discord.gg/9m4x34aRJw">
+                    <img src="/socials/discord.svg" alt="Not Found" />
+                  </a>
                 </div>
               </div>
               <div className="font-small flex justify-between lg:gap-10">
                 <ul className="flex flex-col gap-2 lg:gap-4">
                   <li className="font-medium">Marketplace</li>
-                  <li><Link href="/explore" />Explore</li>
-                  <li><Link href="/explore" />Create</li>
-                  <li><Link href="/explore" />Earn</li>
-                  <li><Link href="/explore" />Campaign</li>
+                  <li><Link href="/explore">Explore</Link></li>
+                  <li><Link href="/create">Create</Link></li>
+                  <li><Link href="/earn">Earn</Link></li>
+                  <li><Link href="/campaign">Campaign</Link></li>
                 </ul>
-                <ul className="flex flex-col gap-2 lg:gap-4">
+                {/* <ul className="flex flex-col gap-2 lg:gap-4">
                   <li className="font-medium">Partnership</li>
                   <li><Link href="/explore" />Giveaway Collaboration</li>
                   <li><Link href="/explore" />Art Theme Collaboration</li>
                   <li><Link href="/explore" />Apply for Mod</li>
                   <li><Link href="/explore" />Apply for Ambassador</li>
-                </ul>
+                </ul> */}
                 <ul className="flex flex-col gap-2 lg:gap-4">
                   <li className="font-medium">Resources</li>
                   <li><a href="https://sakais-organization.gitbook.io/nywnft-whitepaper">NYW Documentation</a></li>
-                  <li><Link href="/explore" />Logo</li>
+                  <li><Link href="https://iili.io/29M77ZQ.png">Logo</Link></li>
                   <li><Link href="/explore" />Terms of Service</li>
                   <li><Link href="/explore" />Privacy Policy</li>
                 </ul>
@@ -77,7 +77,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="w-full h-[1px] my-3 bg-white/10"></div>
-            <p className="text-center text-[#727483]">Copyright ©2024NYWC. All rights reserved.</p>
+            <p className="text-center text-[#727483]">Copyright ©2024NYWNFT. All rights reserved.</p>
           </footer>
         </div>
       </div>

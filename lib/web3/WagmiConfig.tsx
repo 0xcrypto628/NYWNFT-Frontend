@@ -5,6 +5,7 @@ import { mainnet, sepolia } from "viem/chains";
 
 export const projectId = process.env.NEXT_PUBLIC_PROJECT_ID;
 
+console.log(projectId);
 if (!projectId) throw new Error('Project ID is not defined')
 
 const metadata = {

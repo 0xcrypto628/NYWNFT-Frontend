@@ -1,12 +1,8 @@
 import Credentials from "next-auth/providers/credentials";
 import Google from "next-auth/providers/google";
+import { SiweMessage } from "siwe";
 
 import type { AuthOptions } from "next-auth";
-
-type AuthData = {
-  user: string;
-  token: string;
-};
 
 const authConfig: AuthOptions = {
   providers: [
@@ -27,34 +23,22 @@ const authConfig: AuthOptions = {
         },
       },
       async authorize(credentials) {
-        const message = credentials?.message;
-        const signature = credentials?.signature;
-
+        console.log("here");
         try {
-          const res = await fetch(
-            `${process.env.NEXT_PUBLIC_API_BASE_URL}auth/verify`,
-            {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify({
-                message,
-                signature,
-              }),
-            }
+          const siwe = new SiweMessage(
+            JSON.parse(credentials?.message || "{}")
           );
+          const result = await siwe.verify({
+            signature: credentials?.signature || "",
+          });
 
-          const authData: AuthData = await res.json();
-
-          console.log(authData);
-
-          return {
-            id: authData.user,
-            jwt: authData.token,
-          };
+          if (result.success) {
+            return {
+              id: siwe.address,
+            };
+          }
+          return null;
         } catch (e) {
-          console.log(e);
           return null;
         }
       },
@@ -70,10 +54,10 @@ const authConfig: AuthOptions = {
   session: {
     strategy: "jwt",
   },
-  secret: process.env.NEXTAUTH_SECRET,
   pages: {
     signIn: "/signin",
   },
+  secret: process.env.NEXTAUTH_SECRET,
   callbacks: {
     async jwt({ token, user, account, profile, trigger }) {
       if (trigger === "signIn") {
@@ -81,19 +65,12 @@ const authConfig: AuthOptions = {
           token.accessToken = account.access_token!;
           token.refreshToken = account.refresh_token;
 
-          // special id token to pass to backend for validation
-          // https://developers.google.com/identity/sign-in/web/backend-auth
           if (account.provider === "google") {
             token.idToken = account.id_token;
           }
 
           token.provider = account.provider as Provider;
           token.providerAccountId = account.providerAccountId;
-        }
-
-        if (user) {
-          token.username = user.id;
-          token.accessToken = user.jwt;
         }
       }
 
