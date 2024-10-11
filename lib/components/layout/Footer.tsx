@@ -48,7 +48,7 @@ export default function Footer() {
                   <li><Link href="/explore">Explore</Link></li>
                   <li><Link href="/create">Create</Link></li>
                   <li><Link href="/earn">Earn</Link></li>
-                  <li><Link href="/campaign">Campaign</Link></li>
+                  <li><Link href="/campaigns">Campaign</Link></li>
                 </ul>
                 {/* <ul className="flex flex-col gap-2 lg:gap-4">
                   <li className="font-medium">Partnership</li>
