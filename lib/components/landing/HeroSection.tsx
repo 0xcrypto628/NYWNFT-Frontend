@@ -40,7 +40,7 @@ export default function HeroSection() {
                 <p className="gradient text-6xl">New York World NFTs</p>
               </h2>
               <p className="mt-4 mb-8">
-                Ever dreamt of being part of the New York World? NYW, the bridge
+                Ever dreamt of being part of the New York World? NYWNFTs, the bridge
                 between Blockchain and AI, lets you own a piece of the action.
                 Generate and mint NFTs, unlocking the future of creativity in
                 the heart of the world.
@@ -52,7 +52,7 @@ export default function HeroSection() {
                   onClick={() => router.push("/explore")}
                 />
                 <Link
-                  href="https://web.telegram.org/"
+                  href="https://t.me/+YUAQVX-sDoM1NTdh"
                   className="text-[16px] text-light-blue font-medium underline underline-offset-4 uppercase"
                 >
                   Join Community

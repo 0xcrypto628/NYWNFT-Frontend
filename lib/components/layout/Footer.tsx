@@ -26,7 +26,7 @@ export default function Footer() {
                 {logoElement}
                 <div className="font-small max-w-[400px] mt-3">
                   Ever dreamt of being part of the New York World?
-                  NYW, the bridge between Blockchain and AI,
+                  NYWNFTs, the bridge between Blockchain and AI,
                   lets you own a piece of the action. Generate and mint NFTs,
                   unlocking the future of creativity in the heart of the world.
                 </div>
