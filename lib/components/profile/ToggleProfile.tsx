@@ -37,10 +37,10 @@ const ToggleProfile = () => {
       </div>
       <div
         ref={buttonRef}
-        className="p-2 rounded-full hover:cursor-pointer hover:opacity-30 transition-opacity duration-500"
+        // className="rounded-full hover:cursor-pointer hover:opacity-30 transition-opacity duration-500"
         onClick={() => setActive(!active)}
       >
-        <Icon icon="teenyicons:user-circle-outline" className="w-6 h-6" />
+        <Icon icon="teenyicons:user-circle-outline" className="w-9 h-9" />
       </div>
     </div>
   );

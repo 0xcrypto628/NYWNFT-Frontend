@@ -2,7 +2,7 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: "New York World NFT",
-  description: "Make beautiful websites regardless of your design experience.",
+  description: "Ever dreamt of being part of the New York World? NYWNFTs, the bridge between Blockchain and AI, lets you own a piece of the action. Generate and mint NFTs, unlocking the future of creativity in the heart of the world.",
   navItems: [
     {
       label: "Home",

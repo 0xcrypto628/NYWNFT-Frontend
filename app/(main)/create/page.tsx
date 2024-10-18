@@ -257,10 +257,6 @@ const CreateNFT = () => {
                       button below to copy a sample prompt and then click
                       Generate.
                     </p>
-                    <PrimaryButton
-                      className="min-w-[300px] mt-8"
-                      text="Use sample prompt"
-                    />
                   </div>
                 )}
                 {!isGenerating && genImg.length === 3 && (

@@ -118,7 +118,7 @@ export default function Component() {
           </div>
 
           <div className="flex w-full flex-col gap-2">
-            <Button
+            {/* <Button
               startContent={<Icon icon="flat-color-icons:google" width={24} />}
               variant="bordered"
               onClick={() => {
@@ -128,7 +128,7 @@ export default function Component() {
               }}
             >
               Continue with Google
-            </Button>
+            </Button> */}
             <SiweButton />
           </div>
 

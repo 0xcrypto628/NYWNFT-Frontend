@@ -87,7 +87,7 @@ export default function Header() {
       >
         <NavbarBrand>
           <NavbarMenuToggle className="mr-2 h-6 sm:hidden" />
-          {logoElement}
+          {logoElement} 
         </NavbarBrand>
         <NavbarContent
           className="ml-4 hidden h-12 w-full max-w-fit gap-8 rounded-full px-8 sm:flex"
@@ -128,47 +128,6 @@ export default function Header() {
             className="ml-auto flex justify-center items-center h-12 max-w-fit gap-0 rounded-full p-0 px-2 bg-white/30 dark:bg-white/30"
             justify="end"
           >
-            {/* Theme change */}
-            <NavbarItem className="hidden lg:flex">
-              <Button isIconOnly radius="full" variant="light">
-                <Icon
-                  className="text-white"
-                  icon="solar:sun-linear"
-                  width={24}
-                />
-              </Button>
-            </NavbarItem>
-            {/* Notifications */}
-            <NavbarItem className="flex">
-              <Popover offset={12} placement="bottom-end">
-                <PopoverTrigger>
-                  <Button
-                    disableRipple
-                    isIconOnly
-                    className="overflow-visible"
-                    radius="full"
-                    variant="light"
-                  >
-                    <Badge
-                      color="danger"
-                      content="5"
-                      showOutline={false}
-                      size="md"
-                    >
-                      <Icon
-                        className="text-white"
-                        icon="solar:bell-linear"
-                        width={22}
-                      />
-                    </Badge>
-                  </Button>
-                </PopoverTrigger>
-                <PopoverContent className="max-w-[90vw] p-0 sm:max-w-[380px]">
-                  <span>KKK</span>
-                </PopoverContent>
-              </Popover>
-            </NavbarItem>
-            {/* User Menu */}
             <NavbarItem className="flex items-center">
               <ToggleProfile />
             </NavbarItem>

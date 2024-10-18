@@ -61,7 +61,7 @@ export default function HeroSection() {
             </div>
           </div>
           <div className="flex-[50%]">
-            <img src="/state.png" className="float-right" alt="Not Found" />
+            <img src="/state.png" className="w-full max-md" alt="Not Found" />
           </div>
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 justify-items-stretch gap-y-4 bg-white/5 rounded-md p-4 lg:py-6 lg:px-10">

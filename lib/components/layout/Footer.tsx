@@ -42,7 +42,7 @@ export default function Footer() {
                   </a>
                 </div>
               </div>
-              <div className="font-small flex justify-between lg:gap-10">
+              <div className="font-small lg:gap-10">
                 <ul className="flex flex-col gap-2 lg:gap-4">
                   <li className="font-medium">Marketplace</li>
                   <li><Link href="/explore">Explore</Link></li>
@@ -61,8 +61,8 @@ export default function Footer() {
                   <li className="font-medium">Resources</li>
                   <li><a href="https://sakais-organization.gitbook.io/nywnft-whitepaper">NYW Documentation</a></li>
                   <li><Link href="https://iili.io/29M77ZQ.png">Logo</Link></li>
-                  <li><Link href="/explore" />Terms of Service</li>
-                  <li><Link href="/explore" />Privacy Policy</li>
+                  <li><Link href="/explore">Terms of Service</Link></li>
+                  <li><Link href="/explore">Privacy Policy</Link></li>
                 </ul>
               </div>
               <div className="max-w-[400px] flex flex-col justify-center gap-4">
