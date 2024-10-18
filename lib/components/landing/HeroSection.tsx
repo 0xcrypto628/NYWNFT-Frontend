@@ -47,9 +47,9 @@ export default function HeroSection() {
               </p>
               <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-8">
                 <PrimaryButton
-                  text="Get Started"
+                  text="BUY TOKENS" 
                   className="w-[200px]"
-                  onClick={() => router.push("/explore")}
+                  // onClick={() => router.push("/explore")}
                 />
                 <Link
                   href="https://t.me/+YUAQVX-sDoM1NTdh"
@@ -61,7 +61,7 @@ export default function HeroSection() {
             </div>
           </div>
           <div className="flex-[50%]">
-            <img src="/state.png" className="w-full max-md" alt="Not Found" />
+            <img src="/state.png" className="w-full h-[670px] max-md" alt="Not Found" />
           </div>
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 justify-items-stretch gap-y-4 bg-white/5 rounded-md p-4 lg:py-6 lg:px-10">

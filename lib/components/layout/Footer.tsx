@@ -42,7 +42,7 @@ export default function Footer() {
                   </a>
                 </div>
               </div>
-              <div className="font-small lg:gap-10">
+              <div className="font-small flex justify-start lg:gap-10 gap-4">
                 <ul className="flex flex-col gap-2 lg:gap-4">
                   <li className="font-medium">Marketplace</li>
                   <li><Link href="/explore">Explore</Link></li>

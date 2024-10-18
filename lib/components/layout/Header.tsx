@@ -28,7 +28,6 @@ import { useAccount } from "wagmi";
 const menuItems = [
   "Explorer NFT",
   "Create NFT",
-  "Earn",
   "Campaign",
   "Whitepaper",
 ];
@@ -82,7 +81,7 @@ export default function Header() {
             "px-4 sm:px-6 bg-white/15 border-1 border-white/30 backdrop-blur-xl backdrop-saturate-150 rounded-full",
           item: "data-[active=true]:text-primary max-w-[1536px]",
         }}
-        height="100px"
+        height="80px"
         maxWidth="2xl"
       >
         <NavbarBrand>
@@ -123,7 +122,7 @@ export default function Header() {
             </Link>
           </NavbarItem>
         </NavbarContent>
-        {session && address ? (
+        {/* {session && address ? (
           <NavbarContent
             className="ml-auto flex justify-center items-center h-12 max-w-fit gap-0 rounded-full p-0 px-2 bg-white/30 dark:bg-white/30"
             justify="end"
@@ -139,7 +138,7 @@ export default function Header() {
             onClick={() => router.push("/signin")}
             varient="secondary"
           />
-        )}
+        )} */}
 
         {/* Mobile Menu */}
         <NavbarMenu>
