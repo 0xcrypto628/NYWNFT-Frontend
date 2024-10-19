@@ -122,7 +122,7 @@ export default function Header() {
             </Link>
           </NavbarItem>
         </NavbarContent>
-        {/* {session && address ? (
+        {session && address ? (
           <NavbarContent
             className="ml-auto flex justify-center items-center h-12 max-w-fit gap-0 rounded-full p-0 px-2 bg-white/30 dark:bg-white/30"
             justify="end"
@@ -138,7 +138,7 @@ export default function Header() {
             onClick={() => router.push("/signin")}
             varient="secondary"
           />
-        )} */}
+        )}
 
         {/* Mobile Menu */}
         <NavbarMenu>
